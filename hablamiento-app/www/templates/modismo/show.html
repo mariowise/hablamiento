@@ -1,0 +1,65 @@
+
+<div id="header">
+    
+    <div class="row row-stretch">
+        <div class="col-xs-2 text-right">
+            <a href="#/modismo">
+            	<span class="glyphicon glyphicon-play rotated"></span>
+            </a>
+        </div>
+        <div class="col-xs-8 text-center">
+            Chilean Slangs
+        </div>
+        <div class="col-xs-2">
+            
+        </div>
+    </div>
+
+</div>
+
+<div id="show">
+	
+	<div class="category text-center">
+		<div class="row row-stretch">
+			<div class="col-xs-3 text-right">
+				<a ng-if="selected.prev != -1" href="#/modismo/{{ selected.prev }}">
+                    <span class="glyphicon glyphicon-play-circle rotated"></span>		
+                </a>
+			</div>
+			<div class="col-xs-6">
+				<img src="img/{{ selected.categoria }}.png" alt="">
+			</div>
+			<div class="col-xs-3 text-left">
+                <a ng-if="selected.next != -1" href="#/modismo/{{ selected.next }}">
+				    <span ng-if="selected.next != -1" class="glyphicon glyphicon-play-circle"></span>
+                </a>
+			</div>
+		</div>
+		
+		<h3>{{ selected.modismo }}</h3>
+	</div>
+
+	<div class="details">
+		<p>{{ selected.significado }}</p>
+        <hr>
+		<p>{{ selected.traduccion }}</p>
+	</div>
+
+</div>
+
+<div id="footer">
+    <div class="row row-stretch">
+        <div class="col-xs-3 active">
+            <img src="img/slangs.png" alt="">
+        </div>
+        <div class="col-xs-3">
+            <img src="img/categories.png" alt="">
+        </div>
+        <div class="col-xs-3">
+            <img src="img/game.png" alt="">
+        </div>
+        <div class="col-xs-3">
+            <img src="img/networks.png" alt="">
+        </div>
+    </div>
+</div>

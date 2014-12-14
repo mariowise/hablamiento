@@ -1,0 +1,50 @@
+
+<div id="header">
+    
+    <div class="row row-stretch">
+        <div class="col-xs-2 text-right">
+            <!-- <span class="glyphicon glyphicon-play rotated"></span> -->
+        </div>
+        <div class="col-xs-8 text-center">
+            Chilean Slangs
+        </div>
+        <div class="col-xs-2">
+            
+        </div>
+    </div>
+
+</div>
+
+<div id="view">
+    
+    <div class="search">
+        <span class="glyphicon glyphicon-search"></span>
+        <input type="text" ng-model="search" placeholder="Search" />
+        <span class="btn btn-link" ng-click="cancel()">Cancel</span>
+    </div>
+
+    <div class="list">
+        <a class="item" ng-repeat="item in slangs" href="#/modismo/{{ item.id }}">
+            {{ item.modismo }}
+            <span class="glyphicon glyphicon-play"></span>
+        </a>
+    </div>
+
+</div>
+
+<div id="footer">
+    <div class="row row-stretch">
+        <div class="col-xs-3 active">
+            <img src="img/slangs.png" alt="">
+        </div>
+        <div class="col-xs-3">
+            <img src="img/categories.png" alt="">
+        </div>
+        <div class="col-xs-3">
+            <img src="img/game.png" alt="">
+        </div>
+        <div class="col-xs-3">
+            <img src="img/networks.png" alt="">
+        </div>
+    </div>
+</div>
