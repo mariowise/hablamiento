@@ -5,6 +5,7 @@ angular.module('hablamiento', [
 	'controllers.welcome',
 	'controllers.modismo',
 	'controllers.categoria',
+	'controllers.game',
 	'controllers.about',
 	'services'
 ])
@@ -55,6 +56,19 @@ angular.module('hablamiento', [
 		url: '/categoria/:name/:id',
 		templateUrl: 'templates/categoria/show-slang.html',
 		controller: 'CategoriaCtrl'
+	})
+
+	// Game
+	.state('game', {
+		url: '/game',
+		templateUrl: 'templates/game/index.html',
+		controller: 'GameCtrl'
+	})
+
+	.state('game-info', {
+		url: '/game/info',
+		templateUrl: 'templates/game/info.html',
+		controller: 'GameCtrl'
 	})
 
 	// About
