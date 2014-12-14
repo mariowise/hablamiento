@@ -3,12 +3,12 @@
     
     <div class="row row-stretch">
         <div class="col-xs-2 text-right">
-            <a href="#/modismo">
+            <a href="#/categoria/{{ categoriaUrl }}">
             	<span class="glyphicon glyphicon-play rotated"></span>
             </a>
         </div>
         <div class="col-xs-8 text-center">
-            Chilean Slangs
+            {{ categoria }}
         </div>
         <div class="col-xs-2">
             
@@ -22,17 +22,17 @@
 	<div class="category text-center">
 		<div class="row row-stretch">
 			<div class="col-xs-3 text-right">
-				<a ng-if="selected.prev != -1" href="#/modismo/{{ selected.prev }}">
+				<!-- <a ng-if="selected.prev != -1" href="#/modismo/{{ selected.prev }}">
                     <span class="glyphicon glyphicon-play-circle rotated"></span>		
-                </a>
+                </a> -->
 			</div>
 			<div class="col-xs-6">
 				<img src="img/{{ selected.categoria }}.png" alt="">
 			</div>
 			<div class="col-xs-3 text-left">
-                <a ng-if="selected.next != -1" href="#/modismo/{{ selected.next }}">
+                <!-- <a ng-if="selected.next != -1" href="#/modismo/{{ selected.next }}">
 				    <span ng-if="selected.next != -1" class="glyphicon glyphicon-play-circle"></span>
-                </a>
+                </a> -->
 			</div>
 		</div>
 		
@@ -45,29 +45,4 @@
 		<p>{{ selected.traduccion }}</p>
 	</div>
 
-</div>
-
-<div id="footer">
-    <div class="row row-stretch">
-        <div class="col-xs-3 active">
-            <a href="#/modismo">
-                <img src="img/slangs.png" alt="">
-            </a>
-        </div>
-        <div class="col-xs-3">
-            <a href="#/categoria">
-                <img src="img/categories.png" alt="">
-            </a>
-        </div>
-        <div class="col-xs-3">
-            <a href="#/modismo">
-                <img src="img/game.png" alt="">
-            </a>
-        </div>
-        <div class="col-xs-3">
-            <a href="#/modismo">
-                <img src="img/networks.png" alt="">
-            </a>
-        </div>
-    </div>
 </div>

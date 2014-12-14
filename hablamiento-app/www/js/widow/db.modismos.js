@@ -696,3 +696,12 @@ var dbModismos = [
 _.each(dbModismos, function (value, key) {
 	dbModismos[key].id = key
 })
+
+var Categorias = {
+	Diario: 'Daily',
+	Emocion: 'Emotions',
+	Vulgar: 'Vulgar',
+	Turism: 'Turistic',
+	Fiesta: 'Outside',
+	Random: 'Random'
+}

@@ -5662,3 +5662,14 @@ body {
   #show .details {
     font-size: 21px;
     padding: 20px 35px; }
+
+#categoria img {
+  width: 100px;
+  height: auto; }
+#categoria h3 {
+  color: white;
+  margin-top: 10px; }
+#categoria .row {
+  margin-bottom: 15px;
+  font-family: 'TrebuchetMSBold';
+  font-size: 21px; }

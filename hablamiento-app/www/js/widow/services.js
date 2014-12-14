@@ -38,6 +38,23 @@ angular.module('services', [])
 			return -1
 	}
 
+	res.where = function (query) {
+		var group = []
+		_.each(dbModismos, function (value, key) {
+			
+			var flag = true
+			_.each(query, function (filter, index) {
+				if(value[index] != filter)
+					flag = false
+			})
+
+			if(flag)
+				group.push(value)
+
+		})
+		return group
+	}
+
 	window.Modismo = res
 
 	return res

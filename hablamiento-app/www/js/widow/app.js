@@ -4,6 +4,7 @@ angular.module('hablamiento', [
 	'controllers.index',
 	'controllers.welcome',
 	'controllers.modismo',
+	'controllers.categoria',
 	'services'
 ])
 
@@ -33,6 +34,24 @@ angular.module('hablamiento', [
 		url: '/modismo/:id',
 		templateUrl: 'templates/modismo/show.html',
 		controller: 'ModismoCtrl'
+	})
+
+	.state('categoria', {
+		url: '/categoria',
+		templateUrl: 'templates/categoria/index.html',
+		controller: 'CategoriaCtrl'
+	})
+
+	.state('categoria-show', {
+		url: '/categoria/:name',
+		templateUrl: 'templates/categoria/show.html',
+		controller: 'CategoriaCtrl'
+	})
+
+	.state('categoria-slang', {
+		url: '/categoria/:name/:id',
+		templateUrl: 'templates/categoria/show-slang.html',
+		controller: 'CategoriaCtrl'
 	})
 
 	$urlRouterProvider.otherwise('/')
