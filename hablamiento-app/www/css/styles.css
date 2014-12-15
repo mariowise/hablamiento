@@ -5643,6 +5643,8 @@ body {
       top: 17px;
       right: 19px;
       font-size: 18px; }
+    .list .item.disabled {
+      color: #b1b1b1; }
 
 #show {
   overflow-y: scroll;
@@ -5681,3 +5683,17 @@ body {
   padding: 0px !important; }
   .game .details .list {
     height: inherit; }
+.game.end {
+  background-color: inherit !important; }
+  .game.end .category {
+    background-color: transparent !important; }
+    .game.end .category h3 {
+      font-size: 30px; }
+  .game.end .btn-danger {
+    background-color: #c31f27;
+    font-size: 20px; }
+
+.timer .clock {
+  margin-top: -72px;
+  margin-bottom: 38px;
+  font-size: 23px; }

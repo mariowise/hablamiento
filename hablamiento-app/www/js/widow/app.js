@@ -7,7 +7,8 @@ angular.module('hablamiento', [
 	'controllers.categoria',
 	'controllers.game',
 	'controllers.about',
-	'services'
+	'services.modismo',
+	'services.game'
 ])
 
 .config(function ($stateProvider, $urlRouterProvider) {
@@ -68,6 +69,18 @@ angular.module('hablamiento', [
 	.state('game-info', {
 		url: '/game/info',
 		templateUrl: 'templates/game/info.html',
+		controller: 'GameCtrl'
+	})
+
+	.state('game-match', {
+		url: '/game/match/:steps/:timelimit',
+		templateUrl: 'templates/game/match.html',
+		controller: 'GameCtrl'
+	})
+
+	.state('game-end', {
+		url: '/game/end',
+		templateUrl: 'templates/game/end.html',
 		controller: 'GameCtrl'
 	})
 
