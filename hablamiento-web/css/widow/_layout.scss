@@ -1,0 +1,109 @@
+
+body {
+	font-family: 'TrebuchetMSRegular';
+}
+
+#wrapper {
+
+	#header {
+		background-image: url(../img/fondo.png);
+		height: $header-height;
+		position: fixed;
+		width: 100%;
+		top: 0px;
+		z-index: 10;
+
+		.row {
+			& > div {
+				font-size: 31px;
+				text-align: center;
+				position: relative;
+
+				a {
+					color: white;
+					display: block;
+					width: 100%;
+					line-height: $header-height;
+
+					&:hover {
+						text-decoration: none;
+						color: darken(white, 15%);
+					}
+				}
+
+				&.active {
+					background-color: $red;
+
+					a:hover {
+						color: white;
+					}
+					&:after {
+						content: '';
+						position: absolute;
+						border-style: solid;
+						border-width: 26px 26px 0;
+						border-color: $red transparent;
+						display: block;
+						width: 0;
+						z-index: 1;
+						margin-left: -26px;
+						bottom: -26px;
+						left: 50%;
+					}
+				}
+
+				
+			}
+		}
+	}
+
+	#header-ghost {
+		height: $header-height;
+	}
+
+	.section {
+		background-image: url(../img/fondo.png);
+		background-size: cover;
+		min-height: 30px;
+		color: white;
+
+		&.grey {
+			background-color: $grey;
+			background-image: none;
+			color: $blue;
+		}
+
+		.section-label {
+			background-color: $red;
+			line-height: $label-height;
+			height: $label-height;
+			font-size: 31px;
+			color: white;
+			margin-bottom: 65px;
+			padding-left: 0px;
+			padding-right: 0px;
+
+			&:after {
+				content: '';
+				position: absolute;
+				border-style: solid;
+				border-width: 26px 26px 0;
+				border-color: $red transparent;
+				display: block;
+				width: 0;
+				z-index: 1;
+				margin-left: -26px;
+				bottom: -26px;
+				left: 50%;
+			}
+		}
+	}
+
+	#footer {
+		padding: 50px 0px;
+
+		img {
+			width: 50px;
+		}
+	}
+}

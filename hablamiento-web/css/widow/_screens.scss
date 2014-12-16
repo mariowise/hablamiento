@@ -1,0 +1,17 @@
+
+.screens {
+	padding: 60px 0px;
+	padding-top: 0px;
+
+	.carousel-control.right {
+		background-image: none;
+		margin-right: -50px;
+		color: $red;
+	}
+
+	.carousel-control.left {
+		background-image: none;
+		margin-left: -50px;
+		color: $red;
+	}
+}
