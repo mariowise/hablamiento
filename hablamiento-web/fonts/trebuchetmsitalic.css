@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'TrebuchetMSItalic';
-    src: url('trebuchetmsitalic.eot');
-    src: url('trebuchetmsitalic.eot') format('embedded-opentype'),
-         url('trebuchetmsitalic.woff2') format('woff2'),
-         url('trebuchetmsitalic.woff') format('woff'),
-         url('trebuchetmsitalic.ttf') format('truetype'),
-         url('trebuchetmsitalic.svg#TrebuchetMSItalic') format('svg');
-}
