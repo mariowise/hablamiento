@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: 'TrebuchetMSRegular';
+    src: url('../fonts/trebuchetms.eot');
+    src: url('../fonts/trebuchetms.eot') format('embedded-opentype'),
+         url('../fonts/trebuchetms.woff2') format('woff2'),
+         url('../fonts/trebuchetms.woff') format('woff'),
+         url('../fonts/trebuchetms.ttf') format('truetype'),
+         url('../fonts/trebuchetms.svg#TrebuchetMSRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'TrebuchetMSBold';
+    src: url('../fonts/trebuchetmsbold.eot');
+    src: url('../fonts/trebuchetmsbold.eot') format('embedded-opentype'),
+         url('../fonts/trebuchetmsbold.woff2') format('woff2'),
+         url('../fonts/trebuchetmsbold.woff') format('woff'),
+         url('../fonts/trebuchetmsbold.ttf') format('truetype'),
+         url('../fonts/trebuchetmsbold.svg#TrebuchetMSBold') format('svg');
+}
+
+@font-face {
+    font-family: 'TrebuchetMSBoldItalic';
+    src: url('../fonts/trebuchetmsbolditalic.eot');
+    src: url('../fonts/trebuchetmsbolditalic.eot') format('embedded-opentype'),
+         url('../fonts/trebuchetmsbolditalic.woff2') format('woff2'),
+         url('../fonts/trebuchetmsbolditalic.woff') format('woff'),
+         url('../fonts/trebuchetmsbolditalic.ttf') format('truetype'),
+         url('../fonts/trebuchetmsbolditalic.svg#TrebuchetMSBoldItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'TrebuchetMSItalic';
+    src: url('../fonts/trebuchetmsitalic.eot');
+    src: url('../fonts/trebuchetmsitalic.eot') format('embedded-opentype'),
+         url('../fonts/trebuchetmsitalic.woff2') format('woff2'),
+         url('../fonts/trebuchetmsitalic.woff') format('woff'),
+         url('../fonts/trebuchetmsitalic.ttf') format('truetype'),
+         url('../fonts/trebuchetmsitalic.svg#TrebuchetMSItalic') format('svg');
+}
+
+.rotated {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}

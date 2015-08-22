@@ -1,0 +1,64 @@
+
+.float-right {
+    float: right;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.full-wide {
+    width: 100%;
+}
+
+
+// Clearfix
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+// Image vertically align
+.helper {
+    display: inline-block;
+    height: 80%;
+    vertical-align: middle;
+}
+
+
+// Row no padding
+.row.row-stretch {
+    margin-left: 0px;
+    margin-right: 0px;
+
+    & > div {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+ul {
+    padding-left: 10px;
+}

@@ -1,0 +1,29 @@
+
+<div id="header">
+    
+    <div class="row row-stretch">
+        <div class="col-xs-2 text-right">
+            <a href="#/categoria">
+            	<span class="glyphicon glyphicon-play rotated"></span>
+            </a>
+        </div>
+        <div class="col-xs-8 text-center">
+            {{ categoria }}
+        </div>
+        <div class="col-xs-2">
+            
+        </div>
+    </div>
+
+</div>
+
+<div id="view">
+    
+    <div class="list">
+        <a class="item" ng-repeat="item in slangs" href="#/categoria/{{ categoriaUrl }}/{{ item.id }}">
+            {{ item.modismo }}
+            <!-- <span class="glyphicon glyphicon-play"></span> -->
+        </a>
+    </div>
+
+</div>

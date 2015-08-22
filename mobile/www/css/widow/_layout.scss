@@ -1,0 +1,75 @@
+
+html {
+	height: 100%;
+}
+
+body {
+   	min-height: 100%;
+   	background: url(../img/fondo.png) no-repeat center center fixed;
+	background-size: cover;
+	text-transform: initial;
+	font-family: 'TrebuchetMSRegular';
+}
+
+#wrapper {
+	min-height: 100%;
+}
+
+#header {
+	height: $header-height;
+	color: white;
+	font-family: 'TrebuchetMSBold';
+
+	.row {
+		& > div {
+			font-size: 21px;
+			line-height: 44px;
+    		padding-top: 10px;
+		}
+	}
+	a {
+		color: white;
+	}
+	.search-toggle {
+		padding: 10px;
+	}
+}
+
+#view {
+	background-color: $view-back;
+}
+
+#footer {
+	height: $footer-height;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+
+	.active {
+		background-color: $footer-active;
+
+		// &:after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	border-style: solid;
+		// 	border-width: 0 15px 15px;
+		// 	border-color: $footer-active transparent;
+		// 	display: block;
+		// 	width: 0;
+		// 	z-index: 1;
+		// 	top: -15px;
+		// 	left: 27px;
+		// }
+	}
+
+	img {
+		height: 27px;
+	}
+
+	.row {
+		& > div {
+			text-align: center;
+			padding: 15px;
+		}
+	}
+}
