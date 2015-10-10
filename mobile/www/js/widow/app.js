@@ -31,57 +31,57 @@ angular.module('hablamiento', [
 	.state('modismo-index', {
 		url: '/modismo',
 		templateUrl: 'templates/modismo/index.html',
-		controller: 'ModismoCtrl'
+		controller: 'modismo-index'
 	})
 
 	.state('modismo-show', {
 		url: '/modismo/:id',
 		templateUrl: 'templates/modismo/show.html',
-		controller: 'ModismoCtrl'
+		controller: 'modismo-show'
 	})
 
 	// Categoria
 	.state('categoria', {
 		url: '/categoria',
 		templateUrl: 'templates/categoria/index.html',
-		controller: 'CategoriaCtrl'
+		controller: 'categoria'
 	})
 
 	.state('categoria-show', {
 		url: '/categoria/:name',
 		templateUrl: 'templates/categoria/show.html',
-		controller: 'CategoriaCtrl'
+		controller: 'categoria-show'
 	})
 
 	.state('categoria-slang', {
 		url: '/categoria/:name/:id',
 		templateUrl: 'templates/categoria/show-slang.html',
-		controller: 'CategoriaCtrl'
+		controller: 'categoria-slang'
 	})
 
 	// Game
 	.state('game', {
 		url: '/game',
 		templateUrl: 'templates/game/index.html',
-		controller: 'GameCtrl'
+		controller: 'game'
 	})
 
 	.state('game-info', {
 		url: '/game/info',
 		templateUrl: 'templates/game/info.html',
-		controller: 'GameCtrl'
+		controller: 'game-info'
 	})
 
 	.state('game-match', {
 		url: '/game/match/:steps/:timelimit',
 		templateUrl: 'templates/game/match.html',
-		controller: 'GameCtrl'
+		controller: 'game-match'
 	})
 
 	.state('game-end', {
-		url: '/game/end',
+		url: '/game/end/:correctas',
 		templateUrl: 'templates/game/end.html',
-		controller: 'GameCtrl'
+		controller: 'game-end'
 	})
 
 	// About

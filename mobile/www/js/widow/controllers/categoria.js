@@ -1,36 +1,22 @@
 
 angular.module('controllers.categoria', [])
 
-.controller('CategoriaCtrl', function ($scope, $state, $stateParams, Modismo) {
+.controller('categoria', function ($scope, $state, $stateParams, Modismo) {
 
-	switch($state.current.name) {
+})
 
-		case "categoria":
+.controller('categoria-show', function ($scope, $state, $stateParams, Modismo) {
+	$scope.categoria = Categorias[$stateParams.name]
+	$scope.categoriaUrl = $stateParams.name
+	$scope.slangs = Modismo.where({ categoria: $stateParams.name })
 
-			
+	ajustWrapper('.list', 10)
+})
 
-		break;
+.controller('categoria-slang', function ($scope, $state, $stateParams, Modismo) {
+	$scope.categoria = Categorias[$stateParams.name]
+	$scope.categoriaUrl = $stateParams.name
+	$scope.selected = Modismo.find(Number($stateParams.id))
 
-		case "categoria-show":
-
-			$scope.categoria = Categorias[$stateParams.name]
-			$scope.categoriaUrl = $stateParams.name
-			$scope.slangs = Modismo.where({ categoria: $stateParams.name })
-
-			ajustWrapper('.list', 10)
-
-		break;
-
-		case "categoria-slang":
-
-			$scope.categoria = Categorias[$stateParams.name]
-			$scope.categoriaUrl = $stateParams.name
-			$scope.selected = Modismo.find(Number($stateParams.id))
-
-			ajustWrapper('#show', 10)
-
-		break;
-
-	}
-
+	ajustWrapper('#show', 10)
 })

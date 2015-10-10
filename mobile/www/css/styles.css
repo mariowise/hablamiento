@@ -5584,6 +5584,11 @@ body {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg); }
 
+a {
+  text-decoration: none; }
+  a:hover, a:focus, a:visited {
+    text-decoration: none; }
+
 #wrapper-index {
   min-height: 100%;
   display: inline-table;
