@@ -5668,6 +5668,8 @@ a {
       line-height: 85px; }
     #show .category a {
       color: white; }
+    #show .category.small img {
+      width: 80px; }
   #show .details {
     font-size: 21px; }
     #show .details > div {

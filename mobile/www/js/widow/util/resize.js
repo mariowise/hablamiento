@@ -76,7 +76,8 @@ Date.watch = function (scope, espera) {
 			scope.$apply()
 
 		if(!(tiempoPasado.seconds == 0 && tiempoPasado.minutes == 0 && tiempoPasado.hours == 0)) {
-			setTimeout(f, 400)
+			if(!scope.gameEnded)
+				setTimeout(f, 400)
 		} else {
 			scope.endGame()
 		}

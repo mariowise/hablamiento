@@ -96,6 +96,12 @@
 		a {
 			color: white;
 		}
+
+		&.small {
+			img {
+				width: 80px;
+			}
+		}
 	}
 
 	.details {

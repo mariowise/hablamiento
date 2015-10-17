@@ -12,15 +12,21 @@ angular.module('controllers.game', [])
 .controller('game-match', function ($scope, $state, $stateParams, Game) {
 	Game.load()
 	$scope.correctas = 0
+	$scope.cuenta = 1
 	$scope.question = Game.get()[0]
+	$scope.gameEnded = false
 
 	Date.watch($scope, Number($stateParams.timelimit))
 
 	$scope.answare = function (right) {
 		$scope.question = Game.get()[0]
+		$scope.cuenta += 1
 		
 		if(right)
 			$scope.correctas += 1
+
+		if($scope.cuenta == Number($stateParams.steps) )
+			$scope.endGame()
 
 		if($scope.question == undefined) {
 			console.log("Juego terminado")
@@ -40,6 +46,7 @@ angular.module('controllers.game', [])
 		window.timelimit = $stateParams.timelimit
 		window.correctas = $scope.correctas
 
+		$scope.gameEnded = true
 		$state.go('game-end', { correctas: $scope.correctas })
 	}
 
