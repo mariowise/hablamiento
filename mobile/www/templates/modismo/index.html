@@ -6,7 +6,9 @@
             Chilean Slangs
         </div>
         <div class="col-xs-2">
-            <!-- <span class="search-toggle glyphicon glyphicon-search"></span> -->
+            <a ng-click="openSearchBar()">
+                <span class="search-toggle glyphicon glyphicon-search"></span>
+            </a>
         </div>
     </div>
 
@@ -14,9 +16,9 @@
 
 <div id="view">
     
-    <div class="search">
+    <div class="search" style="display:none" data-open="false">
         <span class="glyphicon glyphicon-search"></span>
-        <input type="text" ng-model="search" placeholder="Search" />
+        <input type="text" ng-model="search.modismo" placeholder="Search" />
         <span class="btn btn-link" ng-click="cancel()">Cancel</span>
     </div>
 

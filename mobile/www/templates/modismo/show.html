@@ -27,7 +27,7 @@
                 </a>
 			</div>
 			<div class="col-xs-6">
-				<img src="img/{{ selected.categoria }}.png" alt="">
+				<img src="img/{{ selected.categoria[0] }}.png" alt="">
 			</div>
 			<div class="col-xs-3 text-left">
                 <a ng-if="selected.next != -1" href="#/modismo/{{ selected.next }}">
@@ -40,8 +40,9 @@
 	</div>
 
 	<div class="details">
-		<div>{{ selected.significado }}</div>
-		<div>{{ selected.traduccion }}</div>
+		<div ng-repeat="significado in selected.significado track by $index">
+            {{ significado }} <br><span class="italic">{{ selected.traduccion[$index] }}</span>
+        </div>
 	</div>
 
 </div>

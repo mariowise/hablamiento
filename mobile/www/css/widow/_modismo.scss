@@ -45,6 +45,7 @@
 .list {
 	overflow-y: scroll;
 	height: 100px;
+	width: 100%;
 
 	.item {
 		position: relative;
@@ -103,6 +104,11 @@
 		& > div  {
 			padding: 20px 35px;
 			border-bottom: 1px solid $line-gris;	
+		}
+
+		.italic {
+			font-style: italic;
+			color: #747474;
 		}
 	}
 }

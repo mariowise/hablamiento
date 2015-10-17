@@ -2,11 +2,11 @@
 angular.module('controllers.game', [])
 
 .controller('game', function ($scope, $state, $stateParams, Game) {
-	ajustWrapper('#show', 12)
+	ajustWrapper('#show', 0)
 })
 
 .controller('game-info', function ($scope, $state, $stateParams, Game) {
-	ajustWrapper('#show', 12)
+	ajustWrapper('#show', 0)
 })
 
 .controller('game-match', function ($scope, $state, $stateParams, Game) {
@@ -43,11 +43,11 @@ angular.module('controllers.game', [])
 		$state.go('game-end', { correctas: $scope.correctas })
 	}
 
-	ajustWrapper('#show', 12)
+	ajustWrapper('#show', 0)
 })
 
 .controller('game-end', function ($scope, $state, $stateParams, Game) {
-	ajustWrapper('#show', 12)
+	ajustWrapper('#show', 0)
 
 	$scope.correctas = $stateParams.correctas
 })

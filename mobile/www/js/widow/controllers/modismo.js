@@ -6,6 +6,22 @@ angular.module('controllers.modismo', [])
 
 	$scope.cancel = function () {
 		$scope.search = ''
+		if( $(search).attr('data-open') == "true" ) {
+			h = $('.list').height()
+			$('.search').slideUp()
+			$('.list').animate({ height: (h + 48) + 'px' })
+			$(search).attr('data-open', 'false')
+		}
+	}
+
+	$scope.openSearchBar = function () {
+		search = $('.search')
+		if( $(search).attr('data-open') == "false" ) {
+			h = $('.list').height()
+			$(search).slideDown()
+			$('.list').animate({ height: (h - 48) + 'px' })
+			$(search).attr('data-open', 'true')
+		}
 	}
 
 	ajustWrapper('.list', 0)
@@ -18,5 +34,5 @@ angular.module('controllers.modismo', [])
 
 	window.selected = $scope.selected
 
-	ajustWrapper('#show', 12)
+	ajustWrapper('#show', 0)
 })

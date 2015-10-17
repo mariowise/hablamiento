@@ -5523,7 +5523,7 @@ html {
 
 body {
   min-height: 100%;
-  background: url(../img/fondo.png) no-repeat center center fixed;
+  background: url(../img/trama2.png) no-repeat center center fixed;
   background-size: cover;
   text-transform: initial;
   font-family: 'TrebuchetMSRegular'; }
@@ -5632,7 +5632,8 @@ a {
 
 .list {
   overflow-y: scroll;
-  height: 100px; }
+  height: 100px;
+  width: 100%; }
   .list .item {
     position: relative;
     font-size: 21px;
@@ -5672,6 +5673,9 @@ a {
     #show .details > div {
       padding: 20px 35px;
       border-bottom: 1px solid #dadada; }
+    #show .details .italic {
+      font-style: italic;
+      color: #747474; }
 
 #categoria img {
   width: 100px;
@@ -5683,6 +5687,10 @@ a {
   margin-bottom: 15px;
   font-family: 'TrebuchetMSBold';
   font-size: 21px; }
+
+.categoria-telon {
+  background: url(../img/trama.png) no-repeat center center fixed;
+  background-size: cover; }
 
 .game .details .list {
   padding: 0px !important;

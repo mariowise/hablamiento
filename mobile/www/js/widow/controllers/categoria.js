@@ -2,13 +2,13 @@
 angular.module('controllers.categoria', [])
 
 .controller('categoria', function ($scope, $state, $stateParams, Modismo) {
-
+	
 })
 
 .controller('categoria-show', function ($scope, $state, $stateParams, Modismo) {
-	$scope.categoria = Categorias[$stateParams.name]
+	$scope.categoria = $stateParams.name
 	$scope.categoriaUrl = $stateParams.name
-	$scope.slangs = Modismo.where({ categoria: $stateParams.name })
+	$scope.slangs = Modismo.by_categoria($stateParams.name)
 
 	ajustWrapper('.list', 10)
 })

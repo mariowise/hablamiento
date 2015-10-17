@@ -1,11 +1,11 @@
 
 function ajustWrapper(select, extra) {
 
-	var board = $(window).height()
-	var header = $('#header').height()
-	var search = $('.search').height()
-	var footer = $('#footer').height()
-	var wanted = board - header - footer - search - 12 + extra;
+	var board = $('body')[0].offsetHeight
+	var header = ($('#header')[0] || { offsetHeight: 0 }).offsetHeight
+	var search = ($('.search')[0] || { offsetHeight: 0 }).offsetHeight
+	var footer = ($('#footer')[0] || { offsetHeight: 0 }).offsetHeight
+	var wanted = board - header - footer - search + extra;
 
 	$(select).css('height', wanted + 'px')
 
@@ -17,8 +17,12 @@ $(window).resize(function () {
 })
 
 $(window).resize(function () {
-    ajustWrapper('#show', 12)
+    ajustWrapper('#show', 0)
 })
+
+function searchBar() {
+	
+}
 
 Number.random = function (floor, roof) {
 	return (Math.floor(Math.random() * (roof - floor + 1)) + floor)

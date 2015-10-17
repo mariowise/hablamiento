@@ -55,6 +55,18 @@ angular.module('services.modismo', [])
 		return group
 	}
 
+	res.by_categoria = function (query) {
+		var group = []
+		_.each(dbModismos, function (value, key) {
+
+			if( value.categoria.indexOf(query) != -1 )
+				group.push(value)
+				
+			
+		})
+		return group
+	}
+
 	window.Modismo = res
 
 	return res

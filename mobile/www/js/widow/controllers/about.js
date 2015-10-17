@@ -7,7 +7,7 @@ angular.module('controllers.about', [])
 
 		case "about":
 
-			ajustWrapper('#show', 12)
+			ajustWrapper('#show', 0)
 
 		break;
 
